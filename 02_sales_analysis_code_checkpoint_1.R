@@ -57,28 +57,8 @@ bike_orderlines_joined_tbl
 
 bike_orderlines_joined_tbl %>% glimpse()
 
-
-
 # 5.0 Wrangling Data ----
-# price extended
-mutate(total.price = price * quantity) %>%
-  
-  # Reorganize
-  select(-X__1, -location) %>%
-  select(-ends_with(".id")) %>%
-  
-  bind_cols(bike_orderlines_joined_tbl %>% select(order.id)) %>%
-  
-  # Reorder columns
-  select(contains("date"), contains("id"), contains("order"),
-         quantity, price, total.price,
-         everything()) %>%
-  
-  # Renaming columns
-  rename(order_date = order.date) %>%
-  set_names(names(.) %>% str_replace_all("\\.", "_")) 
 
-bike_orderlines_wrangled_tbl %>% glimpse()
 
 
 
