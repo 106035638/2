@@ -8,7 +8,7 @@ library(tidyquant)
 library(lubridate)
 library(broom)
 
-bike_orderlines_tbl <- read_rds("data_wrangled_student/bike_orderlines.rds")
+bike_orderlines_tbl <- read_rds("../sales_analysis/data_wrangled_student/bike_orderlines.rds")
 
 glimpse(bike_orderlines_tbl)
 

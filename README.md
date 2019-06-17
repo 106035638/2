@@ -1,4 +1,5 @@
-# FinDB_2019
-Financial database management for course in 2019 spring semester.
+# 
+# FinDB_2019_Sales_Analysis
+Reference:　Matt Dancho 
 
-This is an introduction to R
+https://university.business-science.io/courses/enrolled/541056

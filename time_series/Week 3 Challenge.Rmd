@@ -43,7 +43,7 @@ library(lubridate)
 
 ```{r}
 # Read bike orderlines data
-path_bike_orderlines <- "../00_data/bike_sales/data_wrangled/bike_orderlines.rds"
+path_bike_orderlines <- "../data_wrangled_student/bike_orderlines.rds"
 bike_orderlines_tbl <- read_rds(path_bike_orderlines) %>%
     
     # Fix typos found in Feature Engineering
